@@ -1,0 +1,24 @@
+body{
+
+}
+/* 头部 start */
+#top{
+    padding-top: 40px;
+    width:850px;
+    height:150px;
+}
+#top_right{
+    margin-left: 130px;
+}
+#href a{
+    color: #666666;
+}
+#search{
+    margin-top: 10px;
+    width:200px;
+}
+/* 头部 end */
+
+/* 导航栏 start */
+
+/* 导航栏 end */
