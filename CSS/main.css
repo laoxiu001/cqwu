@@ -22,3 +22,128 @@ body{
 /* 导航栏 start */
 
 /* 导航栏 end */
+
+
+
+/* 图片展示 start */
+#picture{
+    margin-top: -20px;
+    width:1170px;
+}
+#picture img{
+    width:100%;
+    height: 400px;
+}
+/* 图片展示 end */
+
+
+/* 正文内容 start */
+#content{
+    margin-top: 15px;
+    width: 1170px;
+}
+.content_box{
+    width: 520px;
+    height:250px;
+    padding-top:15px;
+    background: url(../img/c_background.png) no-repeat 0 0;;
+    background-size: 100% auto;
+}
+.content_box span{
+    font-size: 20px;
+    color: #0b3464;
+    padding-left: 50px;
+}
+.content_box a{
+    color: #fff;
+    margin-left: 290px;
+}
+.content_box a:hover{
+    color: red;
+    text-decoration: none;
+}
+.content_text{
+    padding-left:40px;
+    padding-top: 20px;
+}
+.content_text p img{
+    width:15px;
+}
+/* 正文内容 end */
+
+
+/* 新闻 start */
+#news{
+    width:1170px;
+}
+#news_center{
+    width: 512px;
+    height: 209px;
+    padding-top: 15px;
+    padding-left: 35px;
+    background-image: url("../img/newsbox_bg.jpg");
+}
+/* 新闻 end */
+
+
+/* 信息 start */
+#info{
+    width: 1170px;
+    height:140px;
+    border: solid 2px #eab51f;
+    margin-top: 20px;
+    padding-right: 0;
+}
+#info_img{
+    width:45px;
+}
+.info_content{
+    margin-top: 10px;
+    margin-left: 240px;
+}
+#info_switch {
+    margin-left: 180px;
+    padding-top: 2px;
+}
+#info_switch p{
+    padding-top: 12px;
+    padding-left: 50px;
+    padding-right: 35px;
+    height: 44px;
+    font-weight: 800;
+    background: url(../img/switch.png) no-repeat 0 0;
+}
+#info_switch p:hover{
+    background: url(../img/switch_h.png) no-repeat 0 0;
+}
+/* 信息 end */
+
+
+/* 外链 start */
+#flink{
+    width:1170px;
+    height:50px;
+    background-color: #3988B3;
+    margin-top: 2px;
+    padding-left: 250px;
+    padding-bottom: 5px;
+}
+.select{
+    width: 200px;
+    height:35px;
+    margin-left: 20px;
+}
+/* 外链 end */
+
+
+/* 底部 start */
+#bottom{
+    margin-top: 1px;
+    width:1170px;
+    height:140px;
+    background-color: #3988B3;
+}
+#bottom .row p{
+    margin-top: 5px;
+}
+/* 底部 end */
