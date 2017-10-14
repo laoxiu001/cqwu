@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="CSS/public.css">
     <link rel="stylesheet" href="CSS/main.css">
 </head>
-<body style="background: url(img/background.jpg) repeat-x 0 0;">
+<body>
 <div class="container" id="top">
     <div class="row pull-left" id="top_left">
         <img src="img/logo.jpg" alt="logo">
     </div>
-    <div class="row pull-left" id="top_right">
+    <div class="row pull-right" id="top_right">
         <div id="href">
             <a href="http://www.cqwu.net/" class="clra">学校主页</a>
             <a class="clra">|</a>
@@ -38,40 +38,67 @@
         </div>
     </div>
 </div>
-<div class="container" id="nav" style="background: url(img/nav.jpg) repeat-x 0 0;">
-    <nav class="navbar" role="navigation">
-        <nav role="navigation" class="miscro-font">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="#" class="click_selected">首页</a></li>
-                <li><a href="#" class="click_selected">学院概览</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">第一级导航 <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-submenu"><a href="#">第二级导航</a>
-                        </li>
-                    </ul>
-                </li>
+<div class="container">
+    <div class="row" ng-controller="NavbarCtrl">
+        <nav class="navbar navbar-default" role="navigation" id="nav">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">多级菜单导航</a>
+            </div>
 
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Multi Level <b class="caret"></b></a>
+                        <ul class="dropdown-menu menu-top">
+                            <li><a href="#">Level 1</a></li>
+                            <li class="dropdown-submenu"> <a tabindex="-1" href="#">More options</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">Level 2</a>
+                                    </li>
+                                    <li class="dropdown-submenu"> <a href="#">More..</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Level 3</a>
+                                            </li>
+                                            <li><a href="#">Level 3</a>
+                                            </li>
+                                            <li class="dropdown-submenu"> <a href="#">More..</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Level 4</a>
+                                                    </li>
+                                                    <li><a href="#">Level 4</a>
+                                                    </li>
+                                                    <li class="dropdown-submenu"> <a href="#">More..</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">Level 5</a>
+                                                            </li>
+                                                            <li><a href="#">Level 5</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">第一级导航 <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-submenu"><a href="#">第二级导航</a>
-                            <ul class="dropdown-menu third-menu">
-                                <li><a href="#">第三级导航</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu"><a href="#">第二级导航</a>
-                            <ul class="dropdown-menu third-menu">
-                                <li><a href="#">第三级导航</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Level 2</a>
+                                    </li>
+                                    <li><a href="#">Level 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Level 1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </nav>
+    </div>
 </div>
+
+
 
 <div class="container" id="picture">
     <div class="row">
@@ -81,26 +108,132 @@
 
 
 <div class="container" id="content">
-    <div class="row content_box">
+    <div class="row content_box pull-left">
         <span style="font-weight: 600;">学院新闻</span>
-        <a href="http://math.swu.edu.cn/s/math/index2015sub1/">>>MORE</a>
+        <a class="more" href="http://math.swu.edu.cn/s/math/index2015sub1/">>>MORE</a>
 
         <div class="row content_text">
-            <p><img src="img/list.png" alt="list"></p>
+            <ul>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">香港理工大学祝新华教授与学院师生交流</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-10-10]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">扬州大学陈惠香教授访问学院并做学术</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-14]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">比利时Hasselt大学张印火教授莅临学</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-14]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">学院举行2017级新生开学典礼</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-12]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">学院研究生2016级一支部开展“帮扶</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-11]</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row content_box pull-right">
+        <span style="font-weight: 600;">学院新闻</span>
+        <a class="more" href="http://math.swu.edu.cn/s/math/index2015sub1/">>>MORE</a>
+
+        <div class="row content_text">
+            <ul>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">香港理工大学祝新华教授与学院师生交流</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-10-10]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">扬州大学陈惠香教授访问学院并做学术</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-14]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">比利时Hasselt大学张印火教授莅临学</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-14]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">学院举行2017级新生开学典礼</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-12]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">学院研究生2016级一支部开展“帮扶</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-11]</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row content_box pull-left">
+        <span style="font-weight: 600;">学院新闻</span>
+        <a class="more" href="http://math.swu.edu.cn/s/math/index2015sub1/">>>MORE</a>
+
+        <div class="row content_text">
+            <ul>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">香港理工大学祝新华教授与学院师生交流</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-10-10]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">扬州大学陈惠香教授访问学院并做学术</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-14]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">比利时Hasselt大学张印火教授莅临学</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-14]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">学院举行2017级新生开学典礼</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-12]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">学院研究生2016级一支部开展“帮扶</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-11]</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row content_box pull-right">
+        <span style="font-weight: 600;">学院新闻</span>
+        <a class="more" href="http://math.swu.edu.cn/s/math/index2015sub1/">>>MORE</a>
+
+        <div class="row content_text">
+            <ul>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">香港理工大学祝新华教授与学院师生交流</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-10-10]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">扬州大学陈惠香教授访问学院并做学术</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-14]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">比利时Hasselt大学张印火教授莅临学</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-14]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">学院举行2017级新生开学典礼</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-12]</a>
+                </li>
+                <li class="clrli">
+                    <a href="" class="content_box_text clra">学院研究生2016级一支部开展“帮扶</a>
+                    <a style="margin-left: 60px;" class="clra pull-right">[2017-09-11]</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
 
 
-
-<div class="container" id="news">
+<!--<div class="container" id="news">
     <div class="row">
         <div id="news_center">
             <h4 style="font-weight: 600;">新闻中心</h4>
         </div>
     </div>
-</div>
-
+</div>-->
 
 
 <div class="container" id="info">
@@ -110,16 +243,16 @@
         <img src="img/djxx.png" alt="党建信息">
     </div>
     <div class="pull-left info_content">
-        <p><img src="img/arrow.png" alt="arrow">“巴渝海外引智计划项目”学术活动</p>
-        <p><img src="img/arrow.png" alt="arrow">理学院系列学术报告会（黎德元 教授）</p>
-        <p><img src="img/arrow.png" alt="arrow">理学院系列学术报告会（沈忠民教授）</p>
-        <p><img src="img/arrow.png" alt="arrow">理学院系列学术报告会（邹光勇教授）</p>
+        <p><img src="img/arrow.png" alt="arrow"><a href="" class="content_box_text clra">“巴渝海外引智计划项目”学术活动</a></p>
+        <p><img src="img/arrow.png" alt="arrow"><a href="" class="content_box_text clra">理学院系列学术报告会（黎德元 教授）</a></p>
+        <p><img src="img/arrow.png" alt="arrow"><a href="" class="content_box_text clra">理学院系列学术报告会（沈忠民教授）</a></p>
+        <p><img src="img/arrow.png" alt="arrow"><a href="" class="content_box_text clra">理学院系列学术报告会（邹光勇教授）</a></p>
     </div>
     <div class="row pull-left info_content" style="margin-left: 60px">
-        <p><img src="img/arrow.png" alt="arrow">理学院学术报告会（郑方阳教授）</p>
-        <p><img src="img/arrow.png" alt="arrow">理学院系列学术报告会（Xiao-Hua (Andr...</p>
-        <p><img src="img/arrow.png" alt="arrow">巴渝海外引智计划项目学术报告（周晓华...</p>
-        <p><img src="img/arrow.png" alt="arrow">理学院系列学术报告会（Hebin Li(李鹤槟...</p>
+        <p><img src="img/arrow.png" alt="arrow"><a href="" class="content_box_text clra">理学院学术报告会（郑方阳教授）</a></p>
+        <p><img src="img/arrow.png" alt="arrow"><a href="" class="content_box_text clra">理学院系列学术报告会（Xiao-Hua (Andr...</a></p>
+        <p><img src="img/arrow.png" alt="arrow"><a href="" class="content_box_text clra">巴渝海外引智计划项目学术报告（周晓华...</a></p>
+        <p><img src="img/arrow.png" alt="arrow"><a href="" class="content_box_text clra">理学院系列学术报告会（Hebin Li(李鹤槟...</a></p>
     </div>
     <div class="row pull-left" id="info_switch">
         <p>学术交流</p>
@@ -127,7 +260,6 @@
         <p style="margin-top: -10px">下载专区</p>
     </div>
 </div>
-
 
 
 <div class="container" id="flink">

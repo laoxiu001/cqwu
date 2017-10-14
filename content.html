@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正文</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet"
+          href="CSS/bootstrap/bootstrap.min.css">
+    <!-- jquery -->
+    <script src="CSS/bootstrap/jquery.min.js"></script>
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet"
+          href="CSS/bootstrap/bootstrap-theme.min.css">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="CSS/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/public.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+<div class="container" id="top">
+    <div class="row pull-left" id="top_left">
+        <img src="img/logo.jpg" alt="logo">
+    </div>
+    <div class="row pull-right" id="top_right">
+        <div id="href">
+            <a href="http://www.cqwu.net/" class="clra">学校主页</a>
+            <a class="clra">|</a>
+            <a href="#" class="clra">收藏本站</a>
+            <a class="clra">|</a>
+            <a href="#" class="clra">设为首页</a>
+        </div>
+        <div class="input-group col-md-3" id="search">
+            <input type="text" class="form-control" placeholder="请输入字段名"/>
+            <span class="input-group-btn">
+               <button class="btn btn-info btn-search">查找</button>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row" ng-controller="NavbarCtrl">
+        <nav class="navbar navbar-default" role="navigation" id="nav">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">多级菜单导航</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Multi Level <b class="caret"></b></a>
+                        <ul class="dropdown-menu menu-top">
+                            <li><a href="#">Level 1</a></li>
+                            <li class="dropdown-submenu"> <a tabindex="-1" href="#">More options</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">Level 2</a>
+                                    </li>
+                                    <li class="dropdown-submenu"> <a href="#">More..</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Level 3</a>
+                                            </li>
+                                            <li><a href="#">Level 3</a>
+                                            </li>
+                                            <li class="dropdown-submenu"> <a href="#">More..</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Level 4</a>
+                                                    </li>
+                                                    <li><a href="#">Level 4</a>
+                                                    </li>
+                                                    <li class="dropdown-submenu"> <a href="#">More..</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">Level 5</a>
+                                                            </li>
+                                                            <li><a href="#">Level 5</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Level 2</a>
+                                    </li>
+                                    <li><a href="#">Level 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Level 1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+<div class="container" id="location">
+    <div class="row">
+        <p>
+            <a class="clra small" style="font-weight: 700">当前位置</a>
+            <a class="clra small"> 首页 > > 新闻中心 正文</a>
+        </p>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row" id="text">
+        <h3 style="text-align: center">我院成功举办暑期社会实践PPT大赛</h3>
+    </div>
+    <div class="row" id="text">
+        <a class="clra">
+            2017年9月29日19:30，由我院团总支创业实践部承办的暑期社会实践PPT大赛决赛在红河十阶成功举办。担任此次决赛的评委有：创新创业办公室主任李莉老师、我院团总支副书记杨欢老师、三委会创业实践部部长黄才明、我院学生会主席王兴月、团总支第一副书记李渝东。我院2017级新生观看了此次比赛。
+        </a>
+        </br></br></br>
+        <a class="clra">
+            此次PPT大赛分为初赛和决赛两个阶段。初赛中，共有6名选手脱颖而出进入决赛。在决赛中，每一位选手都发挥出自己最好的状态，运用PPT对自己的暑期社会实践活动的内容及心得感受进行报告。选手们的实践内容多种多样，演讲过程更是深入人心，现场观众掌声不断。赛后，李莉对比赛进行了点评总结。她首先肯定了各选手的精彩表现，告诉我们参加社会实践活动"不要怕晚了，只要你出发，就一定会到达"。其次，她表示通过此次活动，看到同学们身上的很多闪光点，如：感恩、理解、互助等。并希望以后会继续开展这样的活动。点评之后迎来了最激动人心的时刻——评委为获奖选手颁奖并合影留念 。
+        </a>
+    </div>
+</div>
+
+
+
+<div class="container" id="flink" style="margin-top: 40px">
+    <div class="row">
+        <select class="select form-control pull-left">
+            <option value="">----------校企合作----------</option>
+            <option value="">----------安博教育----------</option>
+            <option value="">----重庆立信市场研究有限公司----</option>
+            <option value="">----------服务外包学院----------</option>
+        </select>
+        <select class="select form-control pull-left">
+            <option value="">----------精品课程----------</option>
+            <option value="">--------《数学分析》--------</option>
+            <option value="">--------《数学建模》--------</option>
+        </select>
+        <select class="select form-control pull-left">
+            <option value="">----------自主学习----------</option>
+            <option value="">----------考研网----------</option>
+            <option value="">--------英语在线学习--------</option>
+            <option value="">----------备课网----------</option>
+        </select>
+    </div>
+</div>
+
+<div class="container middle" id="bottom">
+    <div class="row middle">
+        <p style="color: white;margin-top: 50px;">地址:重庆市永川区红河大道319号
+            <a class="clra" href="http://math.cqwu.net/" style="color: red;">[旧版首页]</a>
+            <a class="clra" href="http://math.cqwu.net/" style="color: red;">[管 理]</a></p>
+        <p style="color: white">电话：023-49891820　传真：023-49891820　邮编：402160</p>
+        <p style="color: white">制作维护： 重庆文理学院现代教育技术中心 EDU.CN.VER 2.0
+            <a class="clra" href="http://math.cqwu.net/" style="color: red;">软件开发工作室</a>
+        </p>
+    </div>
+</div>
+</body>
+</html>
