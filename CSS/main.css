@@ -23,6 +23,10 @@ body{
 #nav{
     background: url(../img/nav.jpg) repeat-x 0 0;
 }
+#nav ul li{
+    width:167px;
+    text-align: center;
+}
 .dropdown:hover .menu-top {
     display: block;
 }
